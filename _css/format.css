@@ -1,0 +1,105 @@
+
+
+/* 1. Body styling */
+.body-content {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #fff0f6; /* very light pink */
+    color: #3a1f2b; /* dark plum for readability */
+    margin: 0;
+}
+
+/* 2. Header styling */
+.header-main{
+    background-color: #f8c8dc; /* soft pink */
+    border-bottom: 2px solid #e0a3bd;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 3. Site Title styling */
+.site-title {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #5a2a3a; /* deeper pink for contrast */
+    margin: 0;
+}
+
+/* 4. Navigation bar styling */
+.navbar {
+    background-color: #f4a6c1; /* medium pink */
+    padding: 10px;
+}
+
+/* 5. Navigation list */
+.nav-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 6. Navigation links */
+.nav-link{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #4a1f2d;
+}
+
+/* 7. Main content styling */
+.main-content {
+    padding: 20px;
+}
+
+/* 8. Section container */
+.content-section {
+    margin-bottom: 30px;
+}
+
+/* 9. Section headings */
+.content-section h2 {
+    color: #7a3b57; /* darker pink for headings */
+    margin-bottom: 10px;
+}
+
+/* 10. Standard paragraph styling */
+.paragraph-standard{
+    line-height: 1.6;
+    color: #4a2a36;
+}
+
+/* 11. Buttons */
+.btn {
+    background-color: #ec6f9f; /* vibrant pink */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px; /* rounded */
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d85a8a; /* darker on hover */
+}
+
+/* Back to home */
+.button-home {
+  background-color: #d96ca7; 
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px; 
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none; 
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.button-home:hover {
+  background-color: #bb4a87; 
+}
