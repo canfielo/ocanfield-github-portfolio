@@ -3,14 +3,14 @@
 /* 1. Body styling */
 .body-content {
     font-family: Georgia, "Times New Roman", serif;
-    background-color: #fff0f6; /* very light pink */
-    color: #3a1f2b; /* dark plum for readability */
+    background-color: #fff0f6; /* light pink */
+    color: #3a1f2b; /* purple */
     margin: 0;
 }
 
 /* 2. Header styling */
 .header-main{
-    background-color: #f8c8dc; /* soft pink */
+    background-color: #f8c8dc; /* pink */
     border-bottom: 2px solid #e0a3bd;
     padding: 20px;
     text-align: center;
@@ -19,7 +19,7 @@
 /* 3. Site Title styling */
 .site-title {
     font-family: Georgia, "Times New Roman", serif;
-    color: #5a2a3a; /* deeper pink for contrast */
+    color: #5a2a3a; /* dark pink */
     margin: 0;
 }
 
@@ -71,7 +71,7 @@
 
 /* 11. Buttons */
 .btn {
-    background-color: #ec6f9f; /* vibrant pink */
+    background-color: #ec6f9f; /* bright pink */
     color: white;
     border: none;
     padding: 10px 18px;
