@@ -113,7 +113,7 @@ html, body {
 .body-content {
     display: flex;
     flex-direction: column;
-    min-height: 100v;
+    min-height: 100vh;
 }
 
 .main-content {
@@ -123,7 +123,7 @@ html, body {
 /* 13. Footer Styling */
 .site-footer{
     background-color: #7a3b57; /* dark pink */
-    color: fff;
+    color: #fff;
     text-align: center;
     padding: 15px; 
     margin-top: 20px; 
