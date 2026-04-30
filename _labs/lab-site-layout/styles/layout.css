@@ -1,0 +1,45 @@
+/************************************************ 
+              PRZ Positioning CSS
+   (see PRZ_Style_Guide - Positioning document)
+*************************************************/
+
+/* Positioning of the Header, Nav, Main, Footer */
+
+body {
+    position: relative;
+    min-width: 900px;
+}
+
+/* left vertical nav */
+nav#main {
+    float: left;
+    width: 180px;
+}
+
+/* main content to the right of nav */
+main {
+    margin-left: 200px;
+}
+
+/* footer below everything */
+footer {
+    clear: both;
+    margin-top: 20px;
+}
+
+/* End Positioning of the Header, Nav, Main, Footer
+ ********************
+/* Positioning of Client Login Nav box */
+
+nav#client {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* End Positioning of Client Login Nav box */
+
+
+
+
+
