@@ -129,15 +129,13 @@ html, body {
     margin-top: 20px; 
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Modern serif font import */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
 
-/* Apply modern serif globally */
-.body-content,
-.site-title,
-.content-section h2,
-.button-home {
-    font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+/* Stronger global font override */
+body, .body-content {
+    font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif !important;
 }
 
 /* Pastel accent dividers */
@@ -149,19 +147,19 @@ html, body {
     border-radius: 2px;
 }
 
-/* Card-style content sections */
-.content-section {
+/* Card-style content sections (stronger specificity) */
+body .content-section {
     background-color: #ffffffcc;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(122, 59, 87, 0.15);
     backdrop-filter: blur(4px);
-    margin-bottom: 30px;
 }
 
-/* Header + footer glow */
+/* Header + footer glow (slightly stronger) */
 .header-main,
 .site-footer {
-    box-shadow: 0 3px 8px rgba(122, 59, 87, 0.25);
+    box-shadow: 0 4px 12px rgba(90, 42, 54, 0.35);
 }
+
 
