@@ -5,11 +5,12 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 100%;
 }
 
 /* =========================================
-   2. Header Layout (already styled visually
-      in format.css — only structural here)
+   2. Header Layout
+   (visual styling handled in format.css)
    ========================================= */
 header {
     width: 100%;
@@ -19,18 +20,19 @@ header {
 }
 
 /* =========================================
-   3. Navigation Layout (Flex)
+   3. Navigation Layout
+   Supports rounded + lowered nav box
    ========================================= */
 nav {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    margin-top: 10px; /* gives breathing room above */
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 14px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -43,8 +45,10 @@ main {
     flex: 1;
     display: grid;
     grid-template-columns: minmax(240px, 300px) 1fr;
-    gap: 30px;
-    padding: 20px;
+    gap: 35px;
+    padding: 30px 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* =========================================
@@ -53,10 +57,12 @@ main {
 .sidebar {
     background-color: #fbe2ec; /* soft pastel pink */
     border-right: 3px solid #e0a3bd;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 22px;
+    border-radius: 12px;
     position: sticky;
-    top: 20px;
+    top: 25px;
+    height: fit-content;
+    box-shadow: 0 4px 10px rgba(122, 59, 87, 0.12);
 }
 
 /* =========================================
@@ -65,12 +71,11 @@ main {
 .content-area {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 30px;
 }
 
 /* =========================================
    7. Footer Layout
-   (Visual styling handled in format.css)
    ========================================= */
 footer {
     display: flex;
@@ -96,17 +101,19 @@ footer {
 }
 
 /* =========================================
-   9. Medium Breakpoint
+   9. Medium Breakpoint (Tablets)
    ========================================= */
 @media (max-width: 900px) {
     main {
         grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     .sidebar {
         position: static;
         border-right: none;
         border-bottom: 3px solid #e0a3bd;
+        border-radius: 12px;
     }
 
     .float-image {
@@ -117,21 +124,20 @@ footer {
 }
 
 /* =========================================
-   10. Small Breakpoint
+   10. Small Breakpoint (Phones)
    ========================================= */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
     }
 
     main {
         padding: 15px;
+        gap: 20px;
     }
 
     footer {
         padding: 15px;
     }
 }
-
-
