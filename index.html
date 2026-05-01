@@ -5,48 +5,83 @@
   <meta charset="utf-8" />
   <meta name="author" content="Olivia Canfield" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Formatting styles -->
   <link rel="stylesheet" href="_css/format.css" />
+
+  <!-- New layout styles -->
+  <link rel="stylesheet" href="_css/layout.css" />
 </head>
+
 <body class="body-content">
 
-  <header class="header-main">
-    <h1 class="site-title">GitHub Web Portfolio</h1>
-    <nav class="navbar" role="navigation" aria-label="main menu">
-      <ul class="nav-list">
-      <li><a class="nav-link" href="index.html" style="color: #4a0f1c;">Home</a></li>
-      <li><a class="nav-link" href="about.html" style="color: #4a0f1c;">About Me</a></li>
-      <li><a class="nav-link" href="labs.html" style="color: #4a0f1c;">Labs</a></li>
-      <li><a class="nav-link" href="projects.html" style="color: #4a0f1c;">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="layout-wrapper">
 
-  <main class="main-content">
-    <section class="content-section">
-      <h2 class="section-heading">Welcome</h2>
-      <p class="paragraph-standard">
-        Welcome to my GitHub Web Portfolio! This site highlights my journey in development 
-        as I build skills in HTML, CSS, and other core technologies. Here you’ll find labs, 
-        projects, and personal work that reflect my growth in creating clean, accessible web content. 
-        Explore the sections above to learn more and follow along as I continue developing my technical abilities.
-      </p>
-      <figure>
-        <img src="_images/index photo.png" alt="Decorative portfolio preview image" class="portfolio-image"
-          width="300">
-        <figcaption>A preview of my development work.</figcaption>
-      </figure>
-    </section>
-  </main>
+    <!-- HEADER -->
+    <header class="header-main">
+      <h1 class="site-title">GitHub Web Portfolio</h1>
+
+      <nav class="navbar" role="navigation" aria-label="main menu">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html" style="color: #4a0f1c;">Home</a></li>
+          <li><a class="nav-link" href="about.html" style="color: #4a0f1c;">About Me</a></li>
+          <li><a class="nav-link" href="labs.html" style="color: #4a0f1c;">Labs</a></li>
+          <li><a class="nav-link" href="projects.html" style="color: #4a0f1c;">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN GRID LAYOUT -->
+    <main>
+
+      <!-- SIDEBAR (left column) -->
+      <aside class="sidebar">
+        <h2 class="section-heading">Quick Links</h2>
+        <p class="paragraph-standard">
+          Explore my labs, projects, and personal work as I continue developing my skills.
+        </p>
+      </aside>
+
+      <!-- MAIN CONTENT AREA (right column) -->
+      <section class="content-area">
+
+        <div class="content-section">
+          <h2 class="section-heading">Welcome</h2>
+
+          <p class="paragraph-standard">
+            Welcome to my GitHub Web Portfolio! This site highlights my journey in development 
+            as I build skills in HTML, CSS, and other core technologies. Here you’ll find labs, 
+            projects, and personal work that reflect my growth in creating clean, accessible web content. 
+            Explore the sections above to learn more and follow along as I continue developing my technical abilities.
+          </p>
+
+          <figure>
+            <img src="_images/index photo.png" 
+                 alt="Decorative portfolio preview image" 
+                 class="portfolio-image"
+                 width="300">
+            <figcaption>A preview of my development work.</figcaption>
+          </figure>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
     <footer class="site-footer">
-    <p> 
-      <a class="nav-link" 
-      href="https://docs.google.com/document/d/12aQELwLB4PzUJbLFp92fS6_cc3RqYLQViEfLavyG8DQ/edit?usp=sharing" 
-      target="_blank">
-      View Style Guide
-      </a>
-    </p>
-    <p>&copy; 2026 Olivia Canfield</p>
-    <p> GitHub Web Portfolio</p>
-  </footer>
+      <p>
+        <a class="nav-link" 
+           href="https://docs.google.com/document/d/12aQELwLB4PzUJbLFp92fS6_cc3RqYLQViEfLavyG8DQ/edit?usp=sharing" 
+           target="_blank">
+           View Style Guide
+        </a>
+      </p>
+      <p>&copy; 2026 Olivia Canfield</p>
+      <p>GitHub Web Portfolio</p>
+    </footer>
+
+  </div>
+
 </body>
 </html>
