@@ -6,9 +6,10 @@
   <meta name="author" content="Olivia Canfield" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="_css/format.css" />
+  <link rel="stylesheet" href="_css/layout.css" />
 </head>
 <body class="body-content">
-
+  <div class="layout-wrapper">
   <header class="header-main">
     <h1 class="site-title">GitHub Web Portfolio</h1>
     <nav class="navbar" role="navigation" aria-label="main menu">
@@ -21,18 +22,22 @@
     </nav>
   </header>
 
-  <main class="main-content">
-    <section class="content-section">
+  <main> 
+    <aside class="sidebar">
       <h2 class="section-heading">Labs</h2>
       <p class="paragraph-standard">Explore my class lab assignments below:</p>
+    </aside>
+    <section class="content-area">
+      <div class="content-section">
       <ul>
         <li><a class="nav-link" href="_labs/html_lab/index.html">HTML Lab</a></li>
         <li><a class="nav-link" href="_labs/link_lab/index.html">Link Lab</a></li>
         <li><a class="nav-link" href="_labs/lab-site-layout/index.html">Site Layout Lab</a></li>
         <li><a class="nav-link" href="https://webapps-cascadia.github.io/lab-css-canfielo-1/">CSS Styles Lab</a></li>
       </ul>
+      </div>
+          <a href="index.html" class="button-home" aria-label="Return to Home Page ">Return to Home Page</a>
     </section>
-    <a href="index.html" class="button-home" aria-label="Return to Home Page ">Return to Home Page</a>
   </main>
     <footer class="site-footer">
     <p> 
