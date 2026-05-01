@@ -1,1 +1,136 @@
+/* ================================
+   1. Global Layout Container
+   ================================ */
+.layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ================================
+   2. Header Layout
+   ================================ */
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ================================
+   3. Navigation Layout (Flex)
+   ================================ */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ================================
+   4. Main Content Layout (Grid)
+   Sidebar now on the LEFT
+   ================================ */
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: minmax(250px, 320px) 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+/* ================================
+   5. Sidebar (Left Column)
+   ================================ */
+.sidebar {
+    background-color: #fbe2ec;
+    border-right: 3px solid #e0a3bd;
+    padding: 20px;
+    border-radius: 10px;
+    position: sticky;
+    top: 20px;
+}
+
+/* ================================
+   6. Content Area (Right Column)
+   ================================ */
+.content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ================================
+   7. Footer Layout (Flex)
+   ================================ */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* ================================
+   8. Float Example (Required Variety)
+   ================================ */
+.float-image {
+    float: right;
+    margin: 10px 0 10px 20px;
+    max-width: 40%;
+    border-radius: 8px;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ================================
+   9. Responsive Breakpoint: Medium
+   ================================ */
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+        border-right: none;
+        border-bottom: 3px solid #e0a3bd;
+    }
+
+    .float-image {
+        float: none;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+}
+
+/* ================================
+   10. Responsive Breakpoint: Small
+   ================================ */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
 
