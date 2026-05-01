@@ -6,9 +6,10 @@
   <meta name="author" content="Olivia Canfield" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="_css/format.css" />
+  <link rel="stylesheet" href="_css/layout.css" />
 </head>
 <body class="body-content">
-
+<div class ="layout-wrapper">
   <header class="header-main">
     <h1 class="site-title">GitHub Web Portfolio</h1>
     <nav class="navbar" role="navigation" aria-label="main menu">
@@ -21,8 +22,8 @@
     </nav>
   </header>
 
-  <main class="main-content">
-    <section class="content-section">
+<main>
+  <aside class="sidebar">
       <h2 class="section-heading">About Me</h2>
       <p class="paragraph-standard">
         Hi! I’m Olivia Canfield. I’m currently working toward my associate's degree in Computer Science 
@@ -30,15 +31,21 @@
         Outside of school, I enjoy hiking, reading, playing video games, and creating art. This portfolio 
         is a space to share my work and document my growth as I continue my journey in development.      
       </p>
+  </aside>
+
+  <section class="content-area">
+    <div class="content-section">
         <figure>
         <img src="_images/IMG_6780.png" 
           alt="Photo representing who I am creatively" class="about-image"
+          class="about-image"
           width="300">
         <figcaption>A little snapshot representing who I am creatively.</figcaption>
       </figure>
-    </section>
-  </main>
+    </div>
         <a href="index.html" class="button-home" aria-label="Return to Home Page ">Return to Home Page</a>
+  </section>
+</main>
   <footer class="site-footer">
     <p> 
       <a class="nav-link" 
@@ -50,5 +57,6 @@
     <p>&copy; 2026 Olivia Canfield</p>
     <p> GitHub Web Portfolio</p>
   </footer>
+</div>
 </body>
 </html>
