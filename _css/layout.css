@@ -1,15 +1,16 @@
-/* ================================
-   1. Global Layout Container
-   ================================ */
+/* =========================================
+   1. Page Wrapper (Flex Column)
+   ========================================= */
 .layout-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* ================================
-   2. Header Layout
-   ================================ */
+/* =========================================
+   2. Header Layout (already styled visually
+      in format.css — only structural here)
+   ========================================= */
 header {
     width: 100%;
     display: flex;
@@ -17,41 +18,40 @@ header {
     align-items: center;
 }
 
-/* ================================
+/* =========================================
    3. Navigation Layout (Flex)
-   ================================ */
+   ========================================= */
 nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px 0;
     flex-wrap: wrap;
 }
 
 nav ul {
     display: flex;
-    gap: 18px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* ================================
-   4. Main Content Layout (Grid)
-   Sidebar now on the LEFT
-   ================================ */
+/* =========================================
+   4. Main Layout (Grid)
+   Sidebar on the LEFT
+   ========================================= */
 main {
     flex: 1;
     display: grid;
-    grid-template-columns: minmax(250px, 320px) 1fr;
+    grid-template-columns: minmax(240px, 300px) 1fr;
     gap: 30px;
     padding: 20px;
 }
 
-/* ================================
+/* =========================================
    5. Sidebar (Left Column)
-   ================================ */
+   ========================================= */
 .sidebar {
-    background-color: #fbe2ec;
+    background-color: #fbe2ec; /* soft pastel pink */
     border-right: 3px solid #e0a3bd;
     padding: 20px;
     border-radius: 10px;
@@ -59,29 +59,29 @@ main {
     top: 20px;
 }
 
-/* ================================
+/* =========================================
    6. Content Area (Right Column)
-   ================================ */
+   ========================================= */
 .content-area {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-/* ================================
-   7. Footer Layout (Flex)
-   ================================ */
+/* =========================================
+   7. Footer Layout
+   (Visual styling handled in format.css)
+   ========================================= */
 footer {
-    margin-top: auto;
-    padding: 20px;
-    text-align: center;
     display: flex;
     justify-content: center;
+    padding: 20px;
+    margin-top: auto;
 }
 
-/* ================================
+/* =========================================
    8. Float Example (Required Variety)
-   ================================ */
+   ========================================= */
 .float-image {
     float: right;
     margin: 10px 0 10px 20px;
@@ -95,9 +95,9 @@ footer {
     clear: both;
 }
 
-/* ================================
-   9. Responsive Breakpoint: Medium
-   ================================ */
+/* =========================================
+   9. Medium Breakpoint
+   ========================================= */
 @media (max-width: 900px) {
     main {
         grid-template-columns: 1fr;
@@ -116,9 +116,9 @@ footer {
     }
 }
 
-/* ================================
-   10. Responsive Breakpoint: Small
-   ================================ */
+/* =========================================
+   10. Small Breakpoint
+   ========================================= */
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -133,4 +133,5 @@ footer {
         padding: 15px;
     }
 }
+
 
