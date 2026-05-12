@@ -139,6 +139,19 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     box-shadow: 0 4px 12px rgba(90, 42, 54, 0.35);
 }
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* space between links */
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: #fff; /* or whatever your footer text color is */
+  text-decoration: underline;
+  font-size: 0.95rem;
+}
+
 
 /* Modern serif font import */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap');
